@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    </link>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script defer src="./vue.js"></script>
+    <script src="../../../Downloads/vue.min (1).js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h2>Vanessa Lane</h2>
+        <div style="background-color: #bdbdbd;">
+            <a class="nav" href="#home" onclick="home()" class="link" id="home">Home</a>
+            <a href="#about1" onclick="about()" class="link" id="about">About</a>
+            <a href="#seo#1" onclick="seo()" class="link" id="seo">SEO Optimizing</a>
+            <a href="#GeneralMarketing#1" onclick="marketing()" class="link" id="marketing">General Marketing</a>
+            <a href="#Education#1" onclick="education()" class="link" id="education">Education</a>
+            <a href="#Other#1" onclick="other()" class="link" id="other">Other</a>
+            <a href="#Contact#1" onclick="contact()" class="link" id="contact">Contact</a>
+        </div>
+        <img v-on:click="invite()" id="homeimage" src="ann-arbor.png" />
+        <section id="about1">
+
+            <section class="grid-container">
+                <div class="grid-item">
+                    <h1>About</h1>
+                </div>
+                <div class="grid-item">
+                    <p>
+                    <div class="row">
+                        <div class="column">
+                            <img class="smallAboutImage" src="vanessa-headshot.png" onclick="myFunction(this)" />
+                        </div>
+                        <div class="column">
+                            <img class="smallAboutImage" src="Americano.png" onclick="myFunction(this)" />
+                        </div>
+                        <div class="column">
+                            <img class="smallAboutImage" src="Milwaukee Bucks.png" onclick="myFunction(this)" />
+                        </div>
+                        <div class="column">
+                            <img class="smallAboutImage" src="Milwaukee.png" onclick="myFunction(this)" />
+                        </div>
+                        <div class="column">
+                            <img class="smallAboutImage" src="books.png" onclick="myFunction(this)" />
+                        </div>
+                        <div class="column">
+                            <img class="smallAboutImage" src="ulc.png" onclick="myFunction(this)" />
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="aboutImage" src="vanessa-headshot.png" onclick="myFunction(this)" />
+                        <div id="imgtext"> I love to lead teams of people through projects.
+                            These are a few of my favorite things that keep me grounded and focused
+                            while tackling my next project. I'll share more about myself below.
+                        </div>
+                    </div>
+
+
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-item">
+                        <img src="Milwaukee.png" alt="City of Milwaukee from the lake." id="mke"> <br> I was born and
+                        raised in the
+                        metro Milwaukee, Wisconsin, area. Growing up, I always wanted
+                        to become a teacher, which is why I pursued majors in education and theology at Concordia
+                        University
+                        in Mequon, WI.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="flash.jpeg" alt="Photo of huge brown lab retriever." id="flashImg">
+                    <br>
+                    Our pandemic pup, Flash.
+                </div>
+                <div class="grid-item">
+                    While volunteering in Milwaukee, I met Marcus Lane, and the rest is history.
+                    Marcus and I have been married since 2012, and we have two kids and one huge dog.</div>
+                <div class="grid-item">Our family has lived all
+                    over the United States, including Milwaukee, St. Louis, Denver, Seattle, and Ann Arbor, where we
+                    currently live.</div>
+                <div class="grid-item"><img src="lane-family.png" alt="Smiling family of four: Man, woman, girl, boy.">
+                </div>
+                <div class="grid-item">Together, as a family, we engage our community by listening, loving, and serving.
+                </div>
+            </section>
+        </section>
+        <section id="seo#1">
+
+            <section class="grid-container">
+                <div class="grid-item">
+                    <h1>SEO Optimizing</h1>
+                </div>
+                <div class="grid-item">
+                    <p>
+                        <img src="seo-img.png" alt="The letters 'S' 'E' 'O' written, along with a magnifying glass."
+                            id="homeimage">
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <p>
+                        I'm passionate about creating optimized content to support SEO strategies.
+                        If your organization doesn't have an SEO strategy, I have experience in developing
+                        strategies for educational institutions and small businesses.
+                    </p>
+                </div>
+                <div class="grid-item"> &bull; SEO keyword research &bull; SEO strategy &bull; Page optimization &bull;
+                    Market testing &bull;
+                </div>
+                <div class="grid-item"> &bull; Long-term content strategy &bull; Optimized copywriting &bull; Updating
+                    evergreen content &bull;
+                </div>
+                <div class="grid-item">
+                    <h2> Work samples</h2>
+                </div>
+                <div id="work">
+                    <div class="grid-item"><a href="https://blog.cuw.edu/emotional-intelligence-2163/">4 Tips for
+                            growing
+                            your
+                            emotional intelligence </a></div>
+                    <div class="grid-item"><a href="https://blog.cuw.edu/is-an-mba-still-relevant-2163/">Is an MBA still
+                            relevant? </a></div>
+                    <div class="grid-item"><a href="https://blog.cuw.edu/work-in-tech-2163/">Ready to make your move
+                            into
+                            tech?
+                        </a></div>
+                    <div class="grid-item"><a href="https://blog.cuw.edu/5-reasons-to-become-a-teacher-2163/">5 Reasons
+                            to
+                            become a teacher </div>
+                </div>
+            </section>
+        </section>
+        <section id="GeneralMarketing#1">
+            <section class="grid-container">
+                <div class="grid-item">
+                    <h1>General Marketing</h1>
+                </div>
+                <div class="grid-item">
+                    <p>
+                        <img src="getting-your-message-out.png"
+                            alt="Megaphone blasting from laptop to show digital communication.">
+                    </p>
+                </div>
+                <div class="grid-item"> <em>Helping you strategically communicate your message</em>
+                </div>
+                <div class="grid-item">&bull; Email marketing strategy &bull; Content marketing strategy &bull;
+                    Campaign strategy &bull;
+                </div>
+                <div class="grid-item"> &bull; Copywriting
+                    &bull; Copyediting &bull; Public relations strategy &bull;</div>
+                <div class="grid-item">&bull; HubSpot CRM &bull; LinkedIn Sales &bull; Google Analytics &bull; </div>
+                <div class="grid-item">&bull; E-learning strategy
+                    &bull; Curriculum development &bull; LMS content development &bull;</div>
+                <div class="grid-item">&bull; HubSpot &bull; Canva &bull; Blackboard &bull;</div>
+                <div class="grid-item">&bull; Asana &bull; Monday.com &bull; Microsoft Office &bull; Google suite &bull;
+                </div>
+            </section>
+        </section>
+        <section id="Education#1">
+            <section class="grid-container">
+                <div class="grid-item">
+                    <h1>Education & Committees</h1>
+                </div>
+                <div>
+                    <div class="grid-item" id="bu">
+                        <p>
+                            Boston University - MS in Computer Information Systems (in-progress)
+                        </p>
+                    </div>
+                    <div class="grid-item" id="cuw">
+                        <p>Concordia University Wisconsin - BA in Elementary Education</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <h3>Special Committee for Diversity & Belonging</h3> Gathered monthly to integrate diversity and
+                    inclusion
+                    into Concordia University's strategic plan.
+                </div>
+                <div class="grid-item">
+                    <h3>Open Doors Committee</h3> Gathered weekly with the objective of identifying
+                    and discussing the unique needs of minority students.
+                </div>
+                <div class="grid-item">
+                    <h3>Moms Demand Action & Everytown for Gun Safety</h3><br>
+                    Ann Arbor chapter meets monthly to impact legislation for gun safety.
+                </div>
+                <div class="grid-item">
+                    <h3>HubSpot Content Marketing Certification (2020)</h3>
+                </div>
+                <div class="grid-item">
+                    <h3>Google Analytics Beginner Certification (2021)</h3>
+                </div>
+                <div class="grid-item">
+                    <h3>Title XI Investigation Team (2021- 2022)</h3>
+                </div>
+            </section>
+        </section>
+        <section id="Other#1">
+            <section class="grid-container">
+                <div class="grid-item">
+                    <h1>Other roles</h1>
+                </div>
+                <div>
+                    <div class="grid-item">
+                        <h3>Board Member, Hearts for Pastors</h3> Oversees technical integrations and marketing
+                        projects.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <h3>Cultivating Connections mentor</h3> Mentors U of M students who are a part of
+                    University Lutheran Chapel's student group on campus.
+                </div>
+            </section>
+        </section>
+        <section id="Personal#1">
+            <h1>Personal/Family</h1>
+            <p>
+                I was born and raised in the metro Milwaukee, Wisconsin, area. Growing up, I always wanted
+                to become a teacher, which is why I pursued majors in education and theology at Concordia University
+                in Mequon, WI. While volunteering in Milwaukee, I met Marcus Lane, and the rest is history. Marcus
+                and I have been married since 2012, and we have two kids and one huge dog. Our family has lived all
+                over
+                the United States, including Milwaukee, St. Louis, Denver, Seattle, and Ann Arbor, where we
+                currently live.
+            </p>
+        </section>
+
+        </section>
+        <section id="Contact#1">
+
+            <section class="grid-container">
+                <div class="grid-item">
+                    <h1>Contact</h1>
+                    <div class="formContainer">
+                        <form>
+                            <div class="formRow">
+                                <div class="col-25">
+                                    <label for="firstname">First Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="firstname" name="firstname" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="col-25">
+                                    <label for="lastname">Last Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="lastname" name="lastname" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="col-25">
+                                    <label for="country">Country</label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="country">
+                                        <option value="Australia">Australia</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Other">Other - Not listed</option>
+                                    </select>
+                                </div>
+                                <div class="email">
+                                    <form action="/action_page.php">
+                                        <label for="email">Enter your email address:</label><br>
+                                        <input type="email" id="email" name="email">
+                                        <input type="submit" value="Submit">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="col-25">
+
+                                </div>
+                                <div class="col-75">
+
+                                </div>
+                            </div>
+                            <div class="formRow">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-item"> <img src="enneagram.png" alt="This is the logo for the enneagram."><h3>Final fun facts</h3>
+                    I'm a 3 on the Enneagram test, which means that I strive for productivity and achievement
+                    as my primary motivations. <br><br>My Clifton Strenghts are Learner, Individualization,
+                    Achiever, Futuristic, and Input. <br><br>Favorite junk food: Taco Bell <br><br>Favorite TV show:
+                King of the Hill.</div>
+            </section>
+        </section>
+    </div>
+</body>
+<footer>
+    <p>&copy; Vanessa Zellmer Lane 2022 &bull; <a href="https://www.linkedin.com/in/vanessa-lane-8a0089ab/">Let's connect on
+        LinkedIn</a> </p>
+</footer>
+
+</html>
